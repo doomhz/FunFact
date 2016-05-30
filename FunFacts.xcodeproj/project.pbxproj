@@ -14,6 +14,8 @@
 		A3847E5C1BF4ADC200077C5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3847E5A1BF4ADC200077C5F /* LaunchScreen.storyboard */; };
 		A3847E671BF4ADC200077C5F /* FunFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3847E661BF4ADC200077C5F /* FunFactsTests.swift */; };
 		A3847E721BF4ADC200077C5F /* FunFactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3847E711BF4ADC200077C5F /* FunFactsUITests.swift */; };
+		A3A307881BF608B400F6CBED /* FactBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A307871BF608B400F6CBED /* FactBook.swift */; };
+		A3A3078A1BF614F800F6CBED /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A307891BF614F800F6CBED /* ColorWheel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		A3847E6D1BF4ADC200077C5F /* FunFactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunFactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3847E711BF4ADC200077C5F /* FunFactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsUITests.swift; sourceTree = "<group>"; };
 		A3847E731BF4ADC200077C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A307871BF608B400F6CBED /* FactBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactBook.swift; sourceTree = "<group>"; };
+		A3A307891BF614F800F6CBED /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				A3847E511BF4ADC200077C5F /* AppDelegate.swift */,
+				A3A307871BF608B400F6CBED /* FactBook.swift */,
 				A3847E531BF4ADC200077C5F /* ViewController.swift */,
 				A3847E551BF4ADC200077C5F /* Main.storyboard */,
 				A3847E581BF4ADC200077C5F /* Assets.xcassets */,
 				A3847E5A1BF4ADC200077C5F /* LaunchScreen.storyboard */,
 				A3847E5D1BF4ADC200077C5F /* Info.plist */,
+				A3A307891BF614F800F6CBED /* ColorWheel.swift */,
 			);
 			path = FunFacts;
 			sourceTree = "<group>";
@@ -192,6 +198,7 @@
 				TargetAttributes = {
 					A3847E4D1BF4ADC200077C5F = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 33KDFRWXP7;
 					};
 					A3847E611BF4ADC200077C5F = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -255,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A307881BF608B400F6CBED /* FactBook.swift in Sources */,
 				A3847E541BF4ADC200077C5F /* ViewController.swift in Sources */,
 				A3847E521BF4ADC200077C5F /* AppDelegate.swift in Sources */,
+				A3A3078A1BF614F800F6CBED /* ColorWheel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,10 +405,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumitruglavan.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -407,10 +419,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumitruglavan.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -481,6 +496,7 @@
 				A3847E781BF4ADC200077C5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3847E791BF4ADC200077C5F /* Build configuration list for PBXNativeTarget "FunFactsTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +505,7 @@
 				A3847E7B1BF4ADC200077C5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3847E7C1BF4ADC200077C5F /* Build configuration list for PBXNativeTarget "FunFactsUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +514,7 @@
 				A3847E7E1BF4ADC200077C5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
